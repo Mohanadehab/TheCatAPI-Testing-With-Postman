@@ -1,0 +1,1154 @@
+{
+	"id": "3e9bb947-c441-419f-92ce-94dfb0140725",
+	"name": "Mohanad's API testing project",
+	"timestamp": "2024-09-12T19:34:11.344Z",
+	"collection_id": "37377933-f27d7033-ea42-45b9-bceb-87af0c6535d3",
+	"folder_id": 0,
+	"environment_id": "37377933-86d71617-e777-4279-9cbe-b9fb27ea2090",
+	"totalPass": 98,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-12T19:33:54.257Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5bbc38cc-f066-4534-aa8a-7696b3a7a839",
+			"name": "/images/search",
+			"url": "https://api.thecatapi.com/v1/images/search?size=med&mime_types=&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",
+			"time": 447,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response is ok": true,
+				"Response time is less than 1500ms": true,
+				"Response is an array": true,
+				"First object in array has expected properties": true,
+				"First breed object has expected properties": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First object in array has expected properties": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First breed object has expected properties": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				447
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Response time is less than 1500ms": true,
+					"Response is an array": true,
+					"First object in array has expected properties": true,
+					"First breed object has expected properties": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "4c5876ea-9359-4ce3-bf58-742e8391f29e",
+			"name": "/images/search Copy",
+			"url": "https://api.thecatapi.com/v1/images/search?size=med&mime_types=&format=json&has_breeds=true&order=RANDOM&page=0&limit=101",
+			"time": 4914,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response is ok": true,
+				"Response time is less than 10000ms": true,
+				"Response is an array": true,
+				"First object in array has expected properties": true,
+				"First breed object has expected properties": true,
+				"Content-Type contains application/json": true,
+				"Response contains 100 results instead of 101 (limit = 100)": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 10000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First object in array has expected properties": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First breed object has expected properties": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 100 results instead of 101 (limit = 100)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4914
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Response time is less than 10000ms": true,
+					"Response is an array": true,
+					"First object in array has expected properties": true,
+					"First breed object has expected properties": true,
+					"Content-Type contains application/json": true,
+					"Response contains 100 results instead of 101 (limit = 100)": true
+				}
+			]
+		},
+		{
+			"id": "4c0736fe-a361-4697-b126-2a8eeb689065",
+			"name": "/images/:image_id",
+			"url": "https://api.thecatapi.com/v1/images/BDb8ZXb1v",
+			"time": 272,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response is ok": true,
+				"Response time is less than 1500ms": true,
+				"ID and URL are strings": true,
+				"'breeds' is an array and first breed has a name": true,
+				"Dynamic ID match test": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID and URL are strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"'breeds' is an array and first breed has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Dynamic ID match test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				272
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Response time is less than 1500ms": true,
+					"ID and URL are strings": true,
+					"'breeds' is an array and first breed has a name": true,
+					"Dynamic ID match test": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "c122afb9-60be-4053-84d1-ead9b3dc41bd",
+			"name": "/images/:image_id/analysis",
+			"url": "https://api.thecatapi.com/v1/images/BDb8ZXb1v",
+			"time": 255,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 1500ms": true,
+				"Status code is 200": true,
+				"ID is not null and matches expected pattern": true,
+				"Breeds array is not empty": true,
+				"Weight contains both imperial and metric measurements": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID is not null and matches expected pattern": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Breeds array is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Weight contains both imperial and metric measurements": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				255
+			],
+			"allTests": [
+				{
+					"Response time is less than 1500ms": true,
+					"Status code is 200": true,
+					"ID is not null and matches expected pattern": true,
+					"Breeds array is not empty": true,
+					"Weight contains both imperial and metric measurements": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "ff8c3269-f53d-46a1-b893-a8db4fc51ce0",
+			"name": "/images/ (Your uploads)",
+			"url": "https://api.thecatapi.com/v1/images/?page=0&order=DESC&limit=1",
+			"time": 420,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 600ms": true,
+				"Response has image URL": true,
+				"Image width and height are above 10": true,
+				"ID is not null and matches expected pattern": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 600ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has image URL": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Image width and height are above 10": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID is not null and matches expected pattern": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				420
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 600ms": true,
+					"Response has image URL": true,
+					"Image width and height are above 10": true,
+					"ID is not null and matches expected pattern": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "26698071-40dc-4761-b4ed-6ec29504de5e",
+			"name": "/images/upload",
+			"url": "https://api.thecatapi.com//v1/images/upload",
+			"time": 2257,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Response time is less than 5000ms": true,
+				"Response body has correct 'pending' and 'approved' values": true,
+				"Response body has property 'id'": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 5000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body has correct 'pending' and 'approved' values": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body has property 'id'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2257
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Response time is less than 5000ms": true,
+					"Response body has correct 'pending' and 'approved' values": true,
+					"Response body has property 'id'": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "efd593f3-693d-4fac-90a8-94287b237be7",
+			"name": "/images/:image_id/breeds",
+			"url": "https://api.thecatapi.com/v1/images/BDb8ZXb1v/breeds",
+			"time": 243,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true,
+				"Content-Type contains application/json": true,
+				"Verify response structure and data types": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify response structure and data types": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				243
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true,
+					"Content-Type contains application/json": true,
+					"Verify response structure and data types": true
+				}
+			]
+		},
+		{
+			"id": "8098720b-937c-4d18-b87f-706594aeefe0",
+			"name": "/images/:image_id",
+			"url": "https://api.thecatapi.com/v1/images/w0968qrWP",
+			"time": 367,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response time is less than 1000ms": true,
+				"Successful deletion ": true,
+				"Body matches string": true,
+				"Image ID is no longer available": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful deletion ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Image ID is no longer available": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				367
+			],
+			"allTests": [
+				{
+					"Response time is less than 1000ms": true,
+					"Successful deletion ": true,
+					"Body matches string": true,
+					"Image ID is no longer available": true
+				}
+			]
+		},
+		{
+			"id": "7345691d-6dd0-4d74-a69b-f01253a2a747",
+			"name": "/images/:image_id Copy(deltion of the same id)",
+			"url": "https://api.thecatapi.com/v1/favourites/w0968qrWP",
+			"time": 354,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Response time is less than 1500ms": true,
+				"Invalid deletion ": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Invalid deletion ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				354
+			],
+			"allTests": [
+				{
+					"Response time is less than 1500ms": true,
+					"Invalid deletion ": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "3b624360-88d2-4960-b3b0-6895abcd32b7",
+			"name": "/favourites",
+			"url": "https://api.thecatapi.com/v1/favourites",
+			"time": 362,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains message 'SUCCESS'": true,
+				"Response contains an ID": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains message 'SUCCESS'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains an ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				362
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains message 'SUCCESS'": true,
+					"Response contains an ID": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "d5b9f93e-eb56-45c7-934f-e7e137bb3254",
+			"name": "/favourites",
+			"url": "https://api.thecatapi.com/v1/favourites",
+			"time": 1560,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Content-Type contains application/json": true,
+				"favourites has the required properties with correct types": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"favourites has the required properties with correct types": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1560
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Content-Type contains application/json": true,
+					"favourites has the required properties with correct types": true
+				}
+			]
+		},
+		{
+			"id": "decbbea9-c704-486b-98fa-d23238638405",
+			"name": "/favourites/:favourite_id",
+			"url": "https://api.thecatapi.com/v1/favourites/232488226",
+			"time": 359,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true,
+				"Content-Type contains application/json": true,
+				"Favourite ID matches": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Favourite ID matches": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				359
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true,
+					"Content-Type contains application/json": true,
+					"Favourite ID matches": true
+				}
+			]
+		},
+		{
+			"id": "a550d4dd-f7ad-4194-a536-8c78e1052c45",
+			"name": "/favourites/:favourite_id",
+			"url": "https://api.thecatapi.com/v1/favourites/232488226",
+			"time": 372,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains message 'SUCCESS'": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains message 'SUCCESS'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				372
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains message 'SUCCESS'": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "2837c666-f7f3-4ae2-bd54-778592bc5c8a",
+			"name": "/favourites/:favourite_id Copy",
+			"url": "https://api.thecatapi.com/v1/favourites/232488226",
+			"time": 313,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"already deleted": true,
+				"Response contains message 'INVALID_ACCOUNT'": true,
+				"Content-Type contains text/plain": true
+			},
+			"testPassFailCounts": {
+				"already deleted": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains message 'INVALID_ACCOUNT'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains text/plain": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"already deleted": true,
+					"Response contains message 'INVALID_ACCOUNT'": true,
+					"Content-Type contains text/plain": true
+				}
+			]
+		},
+		{
+			"id": "c5fa49ef-edde-4817-ba04-7de31d1ef34d",
+			"name": "/breeds",
+			"url": "https://api.thecatapi.com/v1/breeds?limit=10&page=0",
+			"time": 198,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true,
+				"Response body is not empty": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				198
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true,
+					"Response body is not empty": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "32f9c2fe-cd60-4a44-8b28-4600cbc395f5",
+			"name": "/breeds/:breed_id",
+			"url": "https://api.thecatapi.com/v1/breeds/abys",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true,
+				"Response body is not empty": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true,
+					"Response body is not empty": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "e68ff9a4-c3de-4396-b886-45ba276d41f1",
+			"name": "/breeds/:breed_id Copy(",
+			"url": "https://api.thecatapi.com/v1/breeds/lolololololo",
+			"time": 192,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time is less than 900ms": true,
+				"Response contains message 'INVALID_DATA'": true,
+				"Content-Type contains text/plain": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 900ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains message 'INVALID_DATA'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains text/plain": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				192
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time is less than 900ms": true,
+					"Response contains message 'INVALID_DATA'": true,
+					"Content-Type contains text/plain": true
+				}
+			]
+		},
+		{
+			"id": "1e8a81d9-e94b-4a4a-b885-b2175722fdff",
+			"name": "Search Breeds",
+			"url": "https://api.thecatapi.com/v1/breeds/search?q=bir&attach_image=1",
+			"time": 265,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true,
+				"Response body is not empty": true,
+				"Content-Type contains application/json": true,
+				"Check if 'bir' is in the URL and in the response ID": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check if 'bir' is in the URL and in the response ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				265
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true,
+					"Response body is not empty": true,
+					"Content-Type contains application/json": true,
+					"Check if 'bir' is in the URL and in the response ID": true
+				}
+			]
+		},
+		{
+			"id": "37702aa5-e1e4-4e8b-ac1f-9500066ff965",
+			"name": "/votes",
+			"url": "https://api.thecatapi.com/v1/votes",
+			"time": 636,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 800ms": true,
+				"Successful POST request": true,
+				"Content-Type contains application/json": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				636
+			],
+			"allTests": [
+				{
+					"Response time is less than 800ms": true,
+					"Successful POST request": true,
+					"Content-Type contains application/json": true
+				}
+			]
+		},
+		{
+			"id": "03987c98-7ef4-484d-a759-decc513a90fa",
+			"name": "/votes",
+			"url": "https://api.thecatapi.com/v1/votes",
+			"time": 363,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 500ms": true,
+				"Status code is 200": true,
+				"Content-Type contains application/json": true,
+				"Response is an array and not empty": true,
+				"Vote has the required properties with correct types": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array and not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Vote has the required properties with correct types": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				363
+			],
+			"allTests": [
+				{
+					"Response time is less than 500ms": true,
+					"Status code is 200": true,
+					"Content-Type contains application/json": true,
+					"Response is an array and not empty": true,
+					"Vote has the required properties with correct types": true
+				}
+			]
+		},
+		{
+			"id": "666341be-5df3-4e15-af55-6579104bace3",
+			"name": "/votes/:vote_id",
+			"url": "https://api.thecatapi.com/v1/votes/1210342",
+			"time": 312,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 500ms": true,
+				"Status code is 200": true,
+				"Content-Type contains application/json": true,
+				"Vote ID matches": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Vote ID matches": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				312
+			],
+			"allTests": [
+				{
+					"Response time is less than 500ms": true,
+					"Status code is 200": true,
+					"Content-Type contains application/json": true,
+					"Vote ID matches": true
+				}
+			]
+		},
+		{
+			"id": "c7e5e9c5-f742-4c05-b270-06d18a7d17a4",
+			"name": "/votes/:vote_id Copy",
+			"url": "https://api.thecatapi.com/v1/votes/1209725454654",
+			"time": 344,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Invalid vote ID": true,
+				"Response contains message 'Not found": true,
+				"Content-Type contains text/plain": true
+			},
+			"testPassFailCounts": {
+				"Invalid vote ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains message 'Not found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type contains text/plain": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				344
+			],
+			"allTests": [
+				{
+					"Invalid vote ID": true,
+					"Response contains message 'Not found": true,
+					"Content-Type contains text/plain": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 14990,
+	"collection": {
+		"requests": [
+			{
+				"id": "5bbc38cc-f066-4534-aa8a-7696b3a7a839",
+				"method": "GET"
+			},
+			{
+				"id": "4c5876ea-9359-4ce3-bf58-742e8391f29e",
+				"method": "GET"
+			},
+			{
+				"id": "4c0736fe-a361-4697-b126-2a8eeb689065",
+				"method": "GET"
+			},
+			{
+				"id": "c122afb9-60be-4053-84d1-ead9b3dc41bd",
+				"method": "GET"
+			},
+			{
+				"id": "ff8c3269-f53d-46a1-b893-a8db4fc51ce0",
+				"method": "GET"
+			},
+			{
+				"id": "26698071-40dc-4761-b4ed-6ec29504de5e",
+				"method": "POST"
+			},
+			{
+				"id": "efd593f3-693d-4fac-90a8-94287b237be7",
+				"method": "GET"
+			},
+			{
+				"id": "8098720b-937c-4d18-b87f-706594aeefe0",
+				"method": "DELETE"
+			},
+			{
+				"id": "7345691d-6dd0-4d74-a69b-f01253a2a747",
+				"method": "DELETE"
+			},
+			{
+				"id": "3b624360-88d2-4960-b3b0-6895abcd32b7",
+				"method": "POST"
+			},
+			{
+				"id": "d5b9f93e-eb56-45c7-934f-e7e137bb3254",
+				"method": "GET"
+			},
+			{
+				"id": "decbbea9-c704-486b-98fa-d23238638405",
+				"method": "GET"
+			},
+			{
+				"id": "a550d4dd-f7ad-4194-a536-8c78e1052c45",
+				"method": "DELETE"
+			},
+			{
+				"id": "2837c666-f7f3-4ae2-bd54-778592bc5c8a",
+				"method": "DELETE"
+			},
+			{
+				"id": "c5fa49ef-edde-4817-ba04-7de31d1ef34d",
+				"method": "GET"
+			},
+			{
+				"id": "32f9c2fe-cd60-4a44-8b28-4600cbc395f5",
+				"method": "GET"
+			},
+			{
+				"id": "e68ff9a4-c3de-4396-b886-45ba276d41f1",
+				"method": "GET"
+			},
+			{
+				"id": "1e8a81d9-e94b-4a4a-b885-b2175722fdff",
+				"method": "GET"
+			},
+			{
+				"id": "37702aa5-e1e4-4e8b-ac1f-9500066ff965",
+				"method": "POST"
+			},
+			{
+				"id": "03987c98-7ef4-484d-a759-decc513a90fa",
+				"method": "GET"
+			},
+			{
+				"id": "666341be-5df3-4e15-af55-6579104bace3",
+				"method": "GET"
+			},
+			{
+				"id": "c7e5e9c5-f742-4c05-b270-06d18a7d17a4",
+				"method": "GET"
+			}
+		]
+	}
+}
