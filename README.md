@@ -1,4 +1,4 @@
-# TheCatAPI-Testing-Project
+# TheCatAPI-Testing-With-Postman
 
 This project is focused on testing The Cat API using Postman. It includes a comprehensive set of API tests that cover various functionalities provided by the API, such as fetching images, voting on images, adding favorites, and uploading images.
 
