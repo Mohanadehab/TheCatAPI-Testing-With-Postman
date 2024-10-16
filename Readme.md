@@ -8,23 +8,6 @@ This project provides a comprehensive Postman collection for testing various API
 - **Postman Collection**: Contains all API requests categorized by the functionality being tested.
 - **Postman Environment**: Allows running tests with environment-specific variables.
 
-## Features
-1. **GET /breeds**:
-   - Retrieves the list of all cat breeds.
-   - Validates the response status code and ensures the breed information is correct.
-
-2. **GET /categories**:
-   - Fetches all image categories.
-   - Confirms the presence of specific categories and verifies the response structure.
-
-3. **POST /votes**:
-   - Submits a vote for a specific cat image.
-   - Ensures the voting functionality works correctly by checking status codes and response bodies.
-
-4. **POST /images/upload**:
-   - Uploads a new cat image to the server.
-   - Verifies the image upload process, response time, and correct storage of the image.
-
 ## Tools & Technologies
 - **Postman**: API testing tool used to create and execute the test collection.
 - **JavaScript**: Used for test scripts and assertions within Postman.
